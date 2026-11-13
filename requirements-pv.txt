@@ -1,0 +1,4 @@
+# PitchVision V1 runtime. Pinned to the versions the submission was produced with, so the file
+# regenerates byte for byte. Same two packages as requirements.txt, nothing added.
+numpy==2.5.4
+pandas==3.0.6

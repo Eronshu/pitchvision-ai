@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "joblib": "1.6.0",
+    "numpy": "2.5.4",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1",
+    "threadpoolctl": "3.8.0"
+  },
+  "feature_names_sha256": "eb8ae14544f3504d9fe100912c81a739823b5686b6a3f0822ed7a7cf0c664d85",
+  "fps": 25,
+  "model": "models/m1_final.joblib",
+  "model_sha256": "4b2b59d0879f484eba334ccb5a1ceac1531736d34f7624dba2513a1a64788bf8",
+  "n_features": 59,
+  "persistence": {
+    "min_alive_s": 1.0,
+    "min_dead_s": 2.0,
+    "smooth_s": 1.0
+  },
+  "schema": "pitchvision-v2-release/1",
+  "threshold": 0.4,
+  "v1_config": "configs/v1.json",
+  "v1_config_sha256": "731762e7c986a3c395870740280646fada31b2456ee07b812c2053203894d950"
+}

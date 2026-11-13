@@ -1,0 +1,4 @@
+# PitchVision HA3 release (scripts/run_ha3.py). Same pinned runtime as V2/M1: the HA3 gradient
+# boosting model and the M1 logistic regressions are scikit-learn pickles bound to these versions,
+# and configs/ha3.json / configs/v2.json refuse to load under any other version.
+-r requirements-v2.txt

@@ -1,0 +1,17 @@
+{
+  "features": {"ball_speed_smooth_frames": 5, "out_margin_m": 1.0,
+               "exit_near_m": 3.0, "exit_lookback_s": 0.4, "max_ball_speed_mps": 40.0},
+  "alive": {"w_static": 0.35, "w_motion": 0.35, "w_gap": 0.3, "w_tag": 0.2,
+            "static_speed_mps": 0.5, "static_min_s": 1.0,
+            "motion_low_mps": 0.8, "motion_high_mps": 1.8, "gap_scale_s": 4.0,
+            "smooth_s": 1.0, "dead_on": 0.6, "r_hold_m": 1.0, "hold_max_s": 6.0,
+            "out_confirm_frames": 3,
+            "min_dead_s": 2.0, "min_alive_s": 1.0, "max_dead_s": 120.0,
+            "restart_speed_mps": 3.0, "restart_min_s": 0.2,
+            "dead_start_offset_frames": 0, "dead_end_offset_frames": 0},
+  "possession": {"r_ctrl_m": 1.5, "r_decay_m": 1.5, "margin_m": 1.0,
+                 "v_ref_mps": 15.0, "speed_floor": 0.3,
+                 "win_s": 0.4, "evidence_on": 0.2, "switch_on": 0.5, "switch_margin": 0.2,
+                 "init_on": 0.3, "boundary": "evidence_start"},
+  "tagging": {"use_setpiece_dead": false, "use_setpiece_team": false}
+}

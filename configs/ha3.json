@@ -1,0 +1,41 @@
+{
+  "dead_model": {
+    "kind": "league",
+    "model": "models/ha3_dead_m1_league.joblib",
+    "model_sha256": "850c4daad35b4db3e0d862bbccfc9f49faff17110c247c93734fad32a52d1290",
+    "test": [
+      "J03WMX",
+      "J03WN1"
+    ],
+    "threshold": 0.4,
+    "train": [
+      "J03WPY",
+      "J03WOH",
+      "J03WOY",
+      "J03WQQ",
+      "J03WR9"
+    ]
+  },
+  "dependencies": {
+    "joblib": "1.6.0",
+    "numpy": "2.5.4",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1",
+    "threadpoolctl": "3.8.0"
+  },
+  "feature_names_sha256": "dbfc205648808c81050633c6c57f747d939da860d5dcbfac59cf2bf78447cbf9",
+  "feature_set": "ha3",
+  "fps": 25,
+  "frozen_sources": {
+    "pvext/ha/decode.py": "400b1e3e18f2b6cbb8e42456d970ba2d20befb767d47a15ce475c47f9fc74331",
+    "pvext/ha/experiment.py": "61a0eb9983a46455713ce7627b66e520eb23e0cf1346257bb3b7ae10c411b8d2",
+    "pvext/ha/features.py": "c078865d3f61b1327ec7bde76bec570319d46a95c5dda928648c650eac32be5c"
+  },
+  "lam": 0.5,
+  "m1_release_config": "configs/v2.json",
+  "model": "models/ha3_final.joblib",
+  "model_sha256": "db988179bdf367c8556f884d5a16636296e5b7297d4b6d195d8013ffc7ba955b",
+  "n_features": 26,
+  "schema": "pitchvision-ha3-release/1",
+  "variant": "ha3"
+}
