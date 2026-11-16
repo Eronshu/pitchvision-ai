@@ -23,16 +23,19 @@ its scope statement.
 
 Everything else is the team's original work, licensed under `LICENSE-PITCHVISION-AI` (MIT,
 Copyright (c) 2026 PitchVision AI team). That includes:
-- `pitchvision/`, `pvext/`, `configs/` and `models/`;
+- `pitchvision/`, `pvext/`, `astra5/`, `configs/`, `models/` and `candidate/`;
 - `scripts/` (none of it came from the organisers);
 - `tests/` and `docs/`;
-- `requirements-pv.txt`, `requirements-dev.txt`, `requirements-v2.txt`, `requirements-ha3.txt`;
+- `requirements-pv.txt`, `requirements-dev.txt`, `requirements-v2.txt`, `requirements-ha3.txt`,
+  `requirements-release.txt`;
 - `pytest.ini`;
 - `NOTICE.md`, `LICENSE-PITCHVISION-AI` and the PitchVision AI section of `README.md`.
 
-## 3. Third-party data used to train the models in `models/`
+## 3. Third-party data used to train the models in `models/` and `candidate/models/`
 
-The three model files were trained only on the IDSSE open dataset.
+All five model files were trained only on the IDSSE open dataset. SkillCorner Open Data
+(https://github.com/SkillCorner/opendata, MIT licence) was used for evaluation only and is not
+redistributed.
 
 **Attribution** (CC BY 4.0, https://creativecommons.org/licenses/by/4.0/):
 
@@ -44,7 +47,7 @@ The three model files were trained only on the IDSSE open dataset.
 **Changes we made:**
 - converted from DFL XML to arrays and to the competition's ATD text format;
 - synthetically degraded (ball dropout, tracklets, noise);
-- used to fit the model parameters shipped in `models/`.
+- used to fit the model parameters shipped in `models/` and `candidate/models/`.
 
 The raw IDSSE files are **not** redistributed here. No endorsement by the DFL, Sportec Solutions or
 the authors is implied.
@@ -54,7 +57,9 @@ the authors is implied.
 The match videos, tracking, Smart Tagging and homography are licensed for the competition only, and
 **none of them is included** in this repository:
 - `data/` ships empty;
-- nothing derived from the match (predictions, extracts or statistics) is committed;
+- no predictions, extracts or score files derived from the match are committed. The technical
+  document of release C quotes a few aggregate statistics of the competition tracking and states
+  how they were obtained (its §3 and §10.4);
 - the full-match ground truth was never available to the team.
 
 The submitted possession file is delivered only through the organisers' submission form.

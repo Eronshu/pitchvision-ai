@@ -5,7 +5,34 @@ This repository regenerates the PitchVision AI possession file for FC Barcelona 
 possession rules and the limitations are in the technical document:
 **[`docs/submission/PitchVision AI.md`](docs/submission/PitchVision%20AI.md)**.
 
-## Reproduce the submission
+## Reproduce release C (tag `submission-v2`)
+
+Requirements: Python 3.13 and the exact pins in `requirements-release.txt`. The run refuses to
+start under other versions, or if the configuration, a model or any pinned source file differs.
+
+```bash
+git clone https://github.com/Eronshu/pitchvision-ai && cd pitchvision-ai && git checkout submission-v2
+python3.13 -m venv .venv && .venv/bin/pip install -r requirements-release.txt
+PYTHONPATH=evaluation .venv/bin/python -m pytest -q tests/test_release_c.py   # synthetic input only
+export MTAH_DATA_DIR=/path/to/the/competition/data # or unpack the bundle into ./data (see DATA.md)
+.venv/bin/python scripts/run_astra5_combo.py --config candidate/combo.json --out /tmp/pv_c
+shasum -a 256 "/tmp/pv_c/PitchVision AI.csv"
+# 86b73f4199b47a392d68fa51127ee0b96d14541e0a12e4017552907255938e00
+```
+
+| file | sha256 |
+|---|---|
+| `candidate/models/combo_dead_hgb.joblib` | 5acbfa493de2443f83af0713d815f3927513370ff5ada6aaeb06c4e125c75139 |
+| `candidate/models/combo_ha5a.joblib` | 956ed0081b1bfabd54e20b604125ac87f1b86f4c408ce995ad84cd2c1f1332e8 |
+| `candidate/RELEASE.lock` | 3489f36aa8368205df1c53fe6702618f2c7bdeb00d2a3284704462601d697c41 |
+
+External data and evidence levels: [`docs/EXTERNAL_DATA_RELEASE_C.md`](docs/EXTERNAL_DATA_RELEASE_C.md).
+
+## Fallback: the HA3 release (tag `submission-v1`)
+
+The earlier release is unchanged and still reproducible from this tree or from its own tag. Its
+technical document is [`docs/submission/submission-v1.md`](docs/submission/submission-v1.md).
+
 
 Requirements: Python 3.13 and the exact pins below. The release refuses to load under any other
 versions of its dependencies.

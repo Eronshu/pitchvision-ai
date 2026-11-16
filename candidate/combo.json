@@ -1,0 +1,366 @@
+{
+  "dead_model": {
+    "feature_names_sha256": "eb8ae14544f3504d9fe100912c81a739823b5686b6a3f0822ed7a7cf0c664d85",
+    "model": "models/combo_dead_hgb.joblib",
+    "model_sha256": "5acbfa493de2443f83af0713d815f3927513370ff5ada6aaeb06c4e125c75139",
+    "n_features": 59,
+    "train": [
+      "J03WOH",
+      "J03WOY",
+      "J03WPY",
+      "J03WQQ",
+      "J03WR9"
+    ]
+  },
+  "dependencies": {
+    "joblib": "1.6.0",
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1",
+    "threadpoolctl": "3.8.0"
+  },
+  "evidence": {
+    "independent_validation": "none",
+    "strict_track_fold_out_doc_spell_f1": {
+      "baseline_ha3_recipe": 0.459,
+      "candidate": 0.5283
+    },
+    "summary": "docs/submission/PitchVision AI.md"
+  },
+  "fps": 25,
+  "ha_model": {
+    "feature_names_sha256": "f134d0bb0112d7c9c777416a7d75ec79e627e2e9336a72249373374e36254d39",
+    "model": "models/combo_ha5a.joblib",
+    "model_sha256": "956ed0081b1bfabd54e20b604125ac87f1b86f4c408ce995ad84cd2c1f1332e8",
+    "n_features": 38,
+    "train": [
+      "J03WOH",
+      "J03WOY",
+      "J03WPY",
+      "J03WQQ",
+      "J03WR9"
+    ]
+  },
+  "idsse_sanity_reference": {
+    "doc": {
+      "ball_present_share": {
+        "max": 0.606486516062403,
+        "mean": 0.5907545424569651,
+        "min": 0.5772958258954525
+      },
+      "d_disagree_ball_missing": {
+        "max": 0.07588108163300036,
+        "mean": 0.06095772064356412,
+        "min": 0.05079028032261931
+      },
+      "d_disagree_ball_present": {
+        "max": 0.07435753918037574,
+        "mean": 0.058027549016967335,
+        "min": 0.048142091908655205
+      },
+      "d_disagree_share": {
+        "max": 0.07176622845855186,
+        "mean": 0.05923052280081872,
+        "min": 0.049496959873060166
+      },
+      "d_run_median_s": {
+        "max": 26.32,
+        "mean": 20.813333333333333,
+        "min": 18.32
+      },
+      "d_runs_lt2s_per90": {
+        "max": 1.967729240456513,
+        "mean": 0.4483644438919344,
+        "min": 0.0
+      },
+      "d_runs_per90": {
+        "max": 97.55430207105574,
+        "mean": 90.71469736326789,
+        "min": 82.17575968976344
+      },
+      "d_share": {
+        "max": 0.4805121926334048,
+        "mean": 0.4430548392167858,
+        "min": 0.4012715585373564
+      },
+      "d_share_ball_missing": {
+        "max": 0.4671355012613609,
+        "mean": 0.42029435253943936,
+        "min": 0.3643901068015739
+      },
+      "d_share_ball_present": {
+        "max": 0.4902697252331737,
+        "mean": 0.4585899109886461,
+        "min": 0.4083154871994549
+      },
+      "direct_switches_per90": {
+        "max": 195.3704028943763,
+        "mean": 163.41691863268645,
+        "min": 140.69205095020777
+      },
+      "graded_minutes": {
+        "max": 97.87333333333332,
+        "mean": 95.34879999999998,
+        "min": 91.47600000000001
+      },
+      "home_share_of_alive": {
+        "max": 0.6624864298281735,
+        "mean": 0.5493693913989172,
+        "min": 0.4293263346200923
+      },
+      "ref_d_share": {
+        "max": 0.45797076100106404,
+        "mean": 0.43675999895659184,
+        "min": 0.3930310161930521
+      },
+      "spell_median_s": {
+        "max": 8.76,
+        "mean": 7.507999999999999,
+        "min": 6.1
+      },
+      "spells_lt1s_per90": {
+        "max": 10.432400154554076,
+        "mean": 4.909098027450295,
+        "min": 0.9233231425816116
+      },
+      "spells_per90": {
+        "max": 288.3136042713126,
+        "mean": 253.9348430719087,
+        "min": 228.9694162522989
+      }
+    },
+    "mild": {
+      "ball_present_share": {
+        "max": 0.8585275554972525,
+        "mean": 0.8512936606741701,
+        "min": 0.8353858583020127
+      },
+      "d_disagree_ball_missing": {
+        "max": 0.08151901045232553,
+        "mean": 0.056949080120772363,
+        "min": 0.046685385237709986
+      },
+      "d_disagree_ball_present": {
+        "max": 0.05972730402478763,
+        "mean": 0.049909050191439035,
+        "min": 0.03945065650513393
+      },
+      "d_disagree_share": {
+        "max": 0.06297936107894557,
+        "mean": 0.050966587094929704,
+        "min": 0.042623332033841506
+      },
+      "d_run_median_s": {
+        "max": 23.84,
+        "mean": 20.194666666666667,
+        "min": 18.14
+      },
+      "d_runs_lt2s_per90": {
+        "max": 2.7586676656903486,
+        "mean": 0.5027654636721074,
+        "min": 0.0
+      },
+      "d_runs_per90": {
+        "max": 101.34281865633946,
+        "mean": 94.5009252203949,
+        "min": 88.63902168783471
+      },
+      "d_share": {
+        "max": 0.4793752824055854,
+        "mean": 0.44502807282667295,
+        "min": 0.40561312304612035
+      },
+      "d_share_ball_missing": {
+        "max": 0.43998557593241294,
+        "mean": 0.4008537134037264,
+        "min": 0.35561497326203206
+      },
+      "d_share_ball_present": {
+        "max": 0.4935039183398998,
+        "mean": 0.45273629715612645,
+        "min": 0.41009445632316677
+      },
+      "direct_switches_per90": {
+        "max": 217.18360321753482,
+        "mean": 185.38132227780068,
+        "min": 157.8882573814556
+      },
+      "graded_minutes": {
+        "max": 97.87333333333332,
+        "mean": 95.34879999999998,
+        "min": 91.47600000000001
+      },
+      "home_share_of_alive": {
+        "max": 0.6413754784541301,
+        "mean": 0.5473897578074872,
+        "min": 0.4443309256795286
+      },
+      "ref_d_share": {
+        "max": 0.4935720844811754,
+        "mean": 0.46075426679145876,
+        "min": 0.41977589658927256
+      },
+      "spell_median_s": {
+        "max": 7.74,
+        "mean": 6.465333333333334,
+        "min": 5.62
+      },
+      "spells_lt1s_per90": {
+        "max": 8.535600126453334,
+        "mean": 6.347816459921431,
+        "min": 2.769969427744835
+      },
+      "spells_per90": {
+        "max": 312.9720046366223,
+        "mean": 279.74861651723796,
+        "min": 247.4506022118719
+      }
+    },
+    "severe": {
+      "ball_present_share": {
+        "max": 0.46057410181176517,
+        "mean": 0.44511735694751375,
+        "min": 0.43156114946399504
+      },
+      "d_disagree_ball_missing": {
+        "max": 0.08149542120151508,
+        "mean": 0.06224097772862215,
+        "min": 0.04807911753518448
+      },
+      "d_disagree_ball_present": {
+        "max": 0.06646997570288095,
+        "mean": 0.05644325350325152,
+        "min": 0.037588169780967705
+      },
+      "d_disagree_share": {
+        "max": 0.07500851440637558,
+        "mean": 0.05969112151954142,
+        "min": 0.049339652967287005
+      },
+      "d_run_median_s": {
+        "max": 27.4,
+        "mean": 21.238666666666667,
+        "min": 18.84
+      },
+      "d_runs_lt2s_per90": {
+        "max": 0.9838646202282565,
+        "mean": 0.12881764228524178,
+        "min": 0.0
+      },
+      "d_runs_per90": {
+        "max": 92.4832743014561,
+        "mean": 88.2780539307465,
+        "min": 77.55914397685538
+      },
+      "d_share": {
+        "max": 0.4695293483172271,
+        "mean": 0.44083415313027874,
+        "min": 0.3965998103199972
+      },
+      "d_share_ball_missing": {
+        "max": 0.4531672131147541,
+        "mean": 0.42612523069921904,
+        "min": 0.3844044536839823
+      },
+      "d_share_ball_present": {
+        "max": 0.49661854285577245,
+        "mean": 0.4593737269398941,
+        "min": 0.39179035536121204
+      },
+      "direct_switches_per90": {
+        "max": 205.8028030489304,
+        "mean": 155.41203619777,
+        "min": 137.57514824466014
+      },
+      "graded_minutes": {
+        "max": 97.87333333333332,
+        "mean": 95.34879999999998,
+        "min": 91.47600000000001
+      },
+      "home_share_of_alive": {
+        "max": 0.6511949266511209,
+        "mean": 0.5460758386290026,
+        "min": 0.4424101942604337
+      },
+      "ref_d_share": {
+        "max": 0.4675520570241904,
+        "mean": 0.4463707847031902,
+        "min": 0.4044399171028136
+      },
+      "spell_median_s": {
+        "max": 9.52,
+        "mean": 7.938666666666669,
+        "min": 6.76
+      },
+      "spells_lt1s_per90": {
+        "max": 6.887052341597795,
+        "mean": 2.920668868521751,
+        "min": 0.9195558885634495
+      },
+      "spells_per90": {
+        "max": 296.84920439776596,
+        "mean": 243.62205012224084,
+        "min": 216.05761536409713
+      }
+    }
+  },
+  "joint": {
+    "curve": {
+      "0.25/0.25": 0.5087554294988418,
+      "0.25/0.5": 0.5165320030658391,
+      "0.25/1.0": 0.5227706873552408,
+      "0.25/2.0": 0.5275774101555037,
+      "0.25/4.0": 0.5307476561699229,
+      "0.5/0.25": 0.5165320030658391,
+      "0.5/0.5": 0.5207996024794167,
+      "0.5/1.0": 0.5246635362427023,
+      "0.5/2.0": 0.5279322288241609,
+      "0.5/4.0": 0.5304858728220213,
+      "1.0/0.25": 0.522729691569229,
+      "1.0/0.5": 0.5246219587272403,
+      "1.0/1.0": 0.5267664046915638,
+      "1.0/2.0": 0.5297014075369298,
+      "1.0/4.0": 0.5305738671491103,
+      "2.0/0.25": 0.5275172029804149,
+      "2.0/0.5": 0.5278720025280504,
+      "2.0/1.0": 0.5296672817902364,
+      "2.0/2.0": 0.530527887155726,
+      "2.0/4.0": 0.5303085621196164,
+      "4.0/0.25": 0.5306870518658011,
+      "4.0/0.5": 0.5304251240435554,
+      "4.0/1.0": 0.5305394541622581,
+      "4.0/2.0": 0.5303085621196164,
+      "4.0/4.0": 0.5284303684301885
+    },
+    "lam_ha": 0.5,
+    "lam_off": 4.0,
+    "lam_on": 0.25,
+    "selection": "leave-one-match-out over the five dev matches, predicted D only, round-2 grid, ties -> larger sum then larger lam_on"
+  },
+  "python": "3.13",
+  "schema": "pitchvision-release-c/2",
+  "sources": {
+    "astra5/release/deploy.py": "49153d526f7472be24e8650d9ad29eab62bc311dbfb713c4b9146856b3390f40",
+    "astra5/s2_joint/decode.py": "abcfa89edb9c4ba14751c5a2b749a7de5440724aa1aeb4864550eff93b7c488c",
+    "configs/v1.json": "bd04f658c477978291e72dbe3b283d6b953b34822ab56324a4278c4bd6550132",
+    "evaluation/possession_metrics.py": "341bad48904b489d6e875397b27687f5d6a4d22a397f3dc8af3a00d48f16874d",
+    "games.py": "3b2122794e9e0476e2b3a871d14880e5fa47c4feaeacf99caef054c2309076ce",
+    "pitchvision/__init__.py": "11359898a760b1ee7c7807a7d729b0b47c08a94bb65e29bc2f8df2101ee699cd",
+    "pitchvision/alive.py": "58e317e03bd9eeb48bb873d8fde66c808e1935785dc2ab1544a8e29277b9d1af",
+    "pitchvision/atd.py": "b7f29a902eda269364d4024185c2c19476e0f276188da6b8876220a763b8533c",
+    "pitchvision/config.py": "9b7ec89a51c5ede8d7d0ad0c42e4c941b44b555d6d1ca77b6d5beb0ed789b147",
+    "pitchvision/features.py": "72f587d7026f4c837d1a09df27985a0f612dfd102243ae764e685723527b293b",
+    "pitchvision/possession.py": "d114f94a808a5603cdf097208ef93086c9a1f5e23a8085466a4d15c0e99bff0a",
+    "pvext/__init__.py": "4fcc33f7ff6bd01ea26fa80f3542ff666297b6010f978f1953d579e9c70aa975",
+    "pvext/ha/features.py": "c078865d3f61b1327ec7bde76bec570319d46a95c5dda928648c650eac32be5c",
+    "pvext/ha5/features.py": "573aece327f083b51bfc55ed0521c1d52ebccdccd7bbc79ccf498997afe22538",
+    "pvext/ha5/model.py": "ba87f9f895bde32ace4673cf413bafa5f5c50f0b2078819d56663937e7d6037f",
+    "pvext/v2/features.py": "0aa71e55a7291b4dfe3abcdb9bbe980bac2712b0467fc4f62ba1b69cc2ae998d",
+    "pvext/v2/m1.py": "825d6c221ee53dbd78dbe1789b71dab825c7e3efa8dfbb590f9c8c100949b7bf",
+    "requirements-release.txt": "cd7ae1115b534bc57151751c8b9842076402c54bfc253ca7dfc380b23a7251ed",
+    "scripts/run_astra5_combo.py": "61bd8b99064058381bb97155a9482bcf791ecb0bb479c412fa8d1ac002ff6fad",
+    "starter/baseline.py": "84d8a414fb1bdf8c7e1fbe4a8789fe6f9cc0c2cccec4685201285b75dbc0cfe6"
+  },
+  "status": "PitchVision AI release C (repository tag submission-v2). Models, features and decoding costs are those of the research candidate astra5-combo-v1; only release metadata and integrity checks differ."
+}
